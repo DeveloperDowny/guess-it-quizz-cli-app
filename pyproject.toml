@@ -1,0 +1,29 @@
+[build-system]
+requires = ["uv_build>=0.8.0"]
+build-backend = "uv_build"
+
+[project]
+name = "quizz"
+version = "0.1.0"
+description = "Quiz impersonation game with player and judge CLIs."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "pydantic>=2.8.2",
+  "pydantic-settings>=2.4.0",
+  "PyYAML>=6.0.2",
+  "typer>=0.16.0",
+]
+
+[project.scripts]
+quizz-player = "quizz.cli.player_app:run"
+quizz-judge = "quizz.cli.judge_app:run"
+
+[dependency-groups]
+dev = [
+  "pytest>=8.3.2",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
