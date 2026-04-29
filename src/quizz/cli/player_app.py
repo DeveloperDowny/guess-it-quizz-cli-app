@@ -81,7 +81,6 @@ def play(
         Path | None,
         typer.Option(
             "--impersonatee-answers-file-path",
-            "--impersnoatee-answers-file-path",
             help="Output path for impersonatee answers.",
         ),
     ] = None,

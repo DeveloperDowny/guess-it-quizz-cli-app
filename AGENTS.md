@@ -27,7 +27,7 @@
         - the answers the person answered impersonating the other person
     - --impersonator
         - the person who is answering impersonating the other person
-    - --impersnoatee-answers-file-path
+    - --impersonatee-answers-file-path
         - the answers given by impersonatee
     - --impersonatee
         - the person from whose perspective you are answering the questions
